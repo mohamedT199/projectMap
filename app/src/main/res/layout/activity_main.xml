@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign.MainActivity"
+    android:background="#85AF9292">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeTextType="uniform"
+                android:hint="ENTER THE Name"
+                android:padding="15dp"
+                app:layout_constraintTop_toBottomOf="@id/pass" />
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="UPLOAD"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pass" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@id/username"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeTextType="uniform"
+                android:hint="ENTER THE PASSWORD"
+                android:padding="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeTextType="uniform"
+                android:hint="ENTER USER USER NAME"
+                android:maxLines="1"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/pass" />
+
+            <TextView
+                android:id="@+id/long_press_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="LONG PRESS TO SIGN UP ...."
+                app:layout_constraintTop_toBottomOf="@id/upload" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="JUST UPLOAD YOU PHOTO...."
+                app:layout_constraintBottom_toTopOf="@id/username"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/pro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
